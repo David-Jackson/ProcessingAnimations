@@ -35,9 +35,9 @@ function draw() {
     for (var i = 16; i < height; i += 41) {
       for (var j = 0; j < 8; j++) {
         stroke(255, 80);
-        line(noise(5 + i + j + n1) * 1600 - 400,
+        line(noise(5 + i + j + n1) * (width * 2) - (width / 3),
              i,
-             noise(5 + i + j + n1 + 0.03) * 1600 - 400,
+             noise(5 + i + j + n1 + 0.03) * (width * 2) - (width / 3),
              i);
   
         stroke(255, 200);
